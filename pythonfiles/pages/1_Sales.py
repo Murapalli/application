@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit_shadcn_ui as ui
 import plotly.graph_objs as go
 import plotly.express as px
 import matplotlib.pyplot as plt
