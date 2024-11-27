@@ -640,7 +640,7 @@ def dashboard():
     TOP1 = TOP.groupby(by = ["Customer name","UNIT"], as_index = False)[["Quantity - kgs","QTY (MT)"]].sum().sort_values('QTY (MT)',ascending=0)
     TOPX=TOP1['QTY (MT)'].sum().round(2)
     Options1 = TOP['UNIT'].unique()
-    st.header(f"Quarter-2 Customer Contract Details Total-{TOPX} MT")
+    st.header(f"Customer Contract Details Total Quantity-{TOPX} MT")
     top1, top2 = st.columns((2))
     with top1:
       selected_options1 = st.multiselect('Select the Unit:', options=Options1,default=Options1)
