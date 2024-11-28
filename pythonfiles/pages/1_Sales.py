@@ -94,7 +94,7 @@ def dashboard():
         st.metric('Sum of sales Qty',f"{lymt:,.0f} MT",f"CY Vol Gr(%) : {CgrowthM:,.0f} %")
     with total2:
         st.info('Budget QTY (MT)')
-        st.metric('Sum of Budget Qty',f"{budgetmt:,.0f} MT",f"Bud Vol Gr(%) : {BgrowthM:,.0f} %")
+        st.metric('Sum of Budget Qty',f"{budgetmt:,.0f} MT")
     with total3:
         st.info('CY Sales in (MT)')
         st.metric('Sum of sales Qty',f"{cymt:,.0f} MT",f"CY Vol Ach(%) : {AAchM:,.0f} %")
@@ -103,7 +103,7 @@ def dashboard():
         st.metric('Sum of sales value',f"{lyv:,.0f} L",f"CY Val Gr(%) : {CgrowthV:,.0f} %")
     with total5:
         st.info('Budget Val(₹)')
-        st.metric('Sum of Budget value',f"₹{budgetval:,.0f} L",f"Bud Val Gr(%) : {BgrowthV:,.0f} %")
+        st.metric('Sum of Budget value',f"₹{budgetval:,.0f} L")
     with total6:
         st.info('CY Sales Val(₹)')
         st.metric('Sum of sales value',f"₹{cyval:,.0f} L",f"CY Val Ach(%) : {AAchV:,.0f} %")
