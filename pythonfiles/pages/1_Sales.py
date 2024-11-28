@@ -605,7 +605,7 @@ def dashboard():
     power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=7c775c45-f871-4d83-a538-aedee7535bee&autoAuth=true&ctid=3edf27d4-21f4-4951-a8e5-81d719a69ec0"
     st.markdown(f'<iframe width="100%" height="600px" src="{power_bi_url}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
     #"""========================================================================================================================================================================="""
-    st.title('Quarter-2 Competitor analysis')
+    st.title('Competitor analysis')
     compet = pd.read_excel("Exports Data.xlsx")
     chart1, chart2 = st.columns((2))
     with chart1:
