@@ -36,7 +36,7 @@ def dashboard():
         df = pd.read_csv("Sales.csv")
 
     Options = df['Month'].unique()
-    selected_options = st.sidebar.multiselect('Select the Month:', options=Options,default=['OCT'])
+    selected_options = st.sidebar.multiselect('Select the Month:', options=Options,default=['APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC','JAN','FEB','MAR'])
     df = df[df['Month'].isin(selected_options)].copy()
 
     st.sidebar.header("Choose your filter: ")
